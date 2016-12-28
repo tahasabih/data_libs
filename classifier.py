@@ -3,9 +3,9 @@ import pandas as pd
 
 # to keep it binary, no change is treated as a positive
 def rise_fall(stock_array, positive_label=None, negative_label=None):
-	if positive_label = None:
+	if positive_label == None:
 		positive_label = "rise"
-	if negative_label = None:
+	if negative_label == None:
 		negative_label = "fall"
 	cat_array = [None] * (len(stock_array) - 1)
 	for i in range(1, len(stock_array) - 1):
