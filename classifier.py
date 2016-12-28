@@ -7,7 +7,7 @@ def rise_fall(stock_array, positive_label=None, negative_label=None):
 		positive_label = "rise"
 	if negative_label == None:
 		negative_label = "fall"
-	cat_array = [None] * (len(stock_array) - 1)
+	cat_array = [None] * (len(stock_array) - 2)
 	for i in range(1, len(stock_array) - 1):
 		if stock_array[i] - stock_array[i-1] >= 0:
 			cat_array[i-1] = positive_label
