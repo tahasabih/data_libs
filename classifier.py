@@ -16,7 +16,7 @@ def rise_fall(stock_array, positive_label=None, negative_label=None):
 	return cat_array
 
 def percentage_change(stock_array):
-	cat_array = [None] * (len(stock_array) - 1)
+	cat_array = [None] * (len(stock_array) - 2)
 	for i in range(1, len(stock_array) - 1):
 		cat_array[i-1] = calculate_percentage(stock_array, i)
 	return cat_array
