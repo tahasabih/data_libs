@@ -13,3 +13,4 @@ def rise_fall(stock_array, positive_label=None, negative_label=None):
 			cat_array[i-1] = positive_label
 		elif stock_array[i] - stock_array[i-1] < 0:
 			cat_array[i-1] = negative_label
+	return cat_array
